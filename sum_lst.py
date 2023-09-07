@@ -26,3 +26,20 @@ def mul_lst(lst):
 
 
 # print(mul_lst([1,2,3]))
+
+# Extend the software program again to add a main method (or whatever equivalent in your programming
+# language of choice is) which allows a user to enter numbers and then calls both of the functions/methods
+# above and prints the result from each one (the sum and product of the numbers). Commit the result.
+# Push all three commits to the Github repository
+
+def main():
+    lst = []
+    num = input("Enter a number to start a list:\n    ")
+    while num.isdigit():
+        lst.append(int(num))
+        num = input("Enter a number to start a list or enter any non-number to exit:\n    ")
+    print("The sum of the list is: " + str(sum_lst(lst)))
+    print("The product of the list is: " + str(mul_lst(lst)))
+
+if __name__ == "__main__":
+    main()
