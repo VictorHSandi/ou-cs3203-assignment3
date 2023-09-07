@@ -43,3 +43,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Create a new branch named part5 on the HEAD of the default branch (e.g., main). In your code, add
+# a new function / method which takes a list / array of numbers and returns a list / array of numbers
+# which are the same numbers given as the argument to the function / method but in reverse order.
+# Commit the result on your new branch
+
+def rev_lst(lst):
+    copy = lst.copy()
+    copy.reverse()
+    return copy
+
+# print(rev_lst([1,2,3,4,5]))
