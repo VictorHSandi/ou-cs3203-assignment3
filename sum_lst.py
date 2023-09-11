@@ -27,6 +27,18 @@ def mul_lst(lst):
 
 # print(mul_lst([1,2,3]))
 
+# Create a new branch named part5 on the HEAD of the default branch (e.g., main). In your code, add
+# a new function / method which takes a list / array of numbers and returns a list / array of numbers
+# which are the same numbers given as the argument to the function / method but in reverse order.
+# Commit the result on your new branch
+
+def rev_lst(lst):
+    copy = lst.copy()
+    copy.reverse()
+    return copy
+
+# print(rev_lst([1,2,3,4,5]))
+
 # Extend the software program again to add a main method (or whatever equivalent in your programming
 # language of choice is) which allows a user to enter numbers and then calls both of the functions/methods
 # above and prints the result from each one (the sum and product of the numbers). Commit the result.
@@ -40,6 +52,9 @@ def main():
         num = input("Enter a number to start a list or enter any non-number to exit:\n    ")
     print("The sum of the list is: " + str(sum_lst(lst)))
     print("The product of the list is: " + str(mul_lst(lst)))
+    print("The reverse of this list is: " + str(rev_lst(lst)))
 
 if __name__ == "__main__":
     main()
+
+
